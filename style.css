@@ -1,0 +1,63 @@
+h1{
+    text-align: center;
+    color:#C8A2C8;
+    font-family: monospace;
+    margin-bottom:1em;
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    gap:8em;
+    
+ text-align: center;
+
+ align-items: center;
+ justify-content: center;
+
+
+}
+.child{
+   background-color: red;
+   font-family:monospace;
+line-height: 3em;
+color:green;
+font-size:3em;
+margin-bottom:1em;
+width:5em;
+height:3em;
+cursor:pointer;
+
+}
+.flip{
+    transform: rotateY(180deg);
+   
+}
+.team{
+    background-color: rgb(253, 253, 253); 
+    width:4em;
+  height:26em;
+  position: absolute;
+  }
+.teamBlue{
+  background-color: aqua; 
+  width:4em;
+height:26em;
+position: absolute;
+opacity:0;
+}
+.teamGreen{
+    background-color: rgb(46, 137, 0); 
+  width:4em;
+height:26em;  
+position: absolute;
+opacity:0;
+}
+aside{
+    position: absolute;
+}
+.X{
+  background-image: url(./Images/X.png);
+}
+.O{
+  background-image: url(./Images/O.png);
+}
