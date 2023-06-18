@@ -1,3 +1,6 @@
+body{
+  background-color:black;
+}
 h1{
     text-align: center;
     color:#C8A2C8;
@@ -54,6 +57,8 @@ opacity:0;
 }
 aside{
     position: absolute;
+    color:#BF9D9D;
+    font-family: monospace;
 }
 .X{
   background-image: url(./Images/X.png);

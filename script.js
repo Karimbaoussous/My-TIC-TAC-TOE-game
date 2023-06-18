@@ -1,5 +1,4 @@
                              //First
-var result = confirm("Are you a GitHub user");
 const body = document.getElementsByTagName("body")[0];
 const container = document.createElement("div");
 const img = document.createElement("img");
@@ -9,17 +8,7 @@ var c = 0;
 const audio = new Audio('./Sounds/pageflip.mp3');
 img.src = "./Images/angry.png";
 
-if (result) {
-    // User clicked OK
-    alert("Enjoy the game . . .");
-} else {
-    // User clicked Cancel
-    alert("Go away :(  ");
-    container.textContent = "GOOOOOOOOOOOOO awaaaaaaaaaaaaaaaaay .. :( = ";
-    container.appendChild(img);
-    body.innerHTML = '';
-    body.appendChild(container);
-}
+
 
                                 // The game
 const block = document.querySelector(".child");
@@ -28,10 +17,15 @@ const teamGreen = document.getElementsByClassName("teamGreen")[0];
 const teamBlue = document.getElementsByClassName("teamBlue")[0];
 const threeRow = document.getElementsByClassName("container")[0];
 console.log(threeRow);
+i=0;
+
 blocks.forEach(function(block) {
     
+   
     block.addEventListener("click", function() {
-        
+
+        if(block == "I already clicked"){}
+        else{
 if(c<=8){
        this.textContent = "";
         audio.play();
@@ -60,12 +54,21 @@ if(c<=8){
 
 
 }
-        // The winning part
+        /* The winning part
             if(threeRow.block.style.backgroundImage === 'url("Images/X.png")' || threeRow.block.style.backgroundImage === 'url("Images/O.png")'){
                 threeRow.block.style.opacity = 0.5;
-            }
-
+            }*/
+        
+            block = "I already clicked";
+            
+        }
 });
+
+
+
+
+
+
 });
 
 
